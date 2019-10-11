@@ -1,0 +1,68 @@
+---
+dependency:
+  name: galaxy
+  options:
+    role-file: requirements.yml
+lint:
+  name: yamllint
+driver:
+  name: docker
+platforms:
+  - name: ca-certificates-alpine-edge
+    image: alpine:edge
+    pre_build_image: yes
+    command: sh -c "while true ; do sleep 1 ; done"
+  - name: ca-certificates-alpine-latest
+    image: alpine:latest
+    pre_build_image: yes
+    command: sh -c "while true ; do sleep 1 ; done"
+  - name: ca-certificates-archlinux
+    image: archlinux/base
+    pre_build_image: yes
+  - name: ca-certificates-centos-6
+    image: centos:6
+    pre_build_image: yes
+  - name: ca-certificates-centos-latest
+    image: centos:latest
+    pre_build_image: yes
+  - name: ca-certificates-debian-stable
+    image: debian:stable
+    pre_build_image: yes
+  - name: ca-certificates-debian-unstable
+    image: debian:unstable
+    pre_build_image: yes
+  - name: ca-certificates-fedora-latest
+    image: fedora:latest
+    pre_build_image: yes
+  - name: ca-certificates-fedora-rawhide
+    image: fedora:rawhide
+    pre_build_image: yes
+  - name: ca-certificates-opensuse-leap
+    image: opensuse/leap
+    pre_build_image: yes
+  - name: ca-certificates-ubuntu-latest
+    image: ubuntu:latest
+    pre_build_image: yes
+  - name: ca-certificates-ubuntu-rolling
+    image: ubuntu:rolling
+    pre_build_image: yes
+  - name: ca-certificates-ubuntu-devel
+    image: ubuntu:devel
+    pre_build_image: yes
+provisioner:
+  name: ansible
+  playbooks:
+    prepare: ../resources/prepare.yml
+    converge: ../resources/playbook.yml
+  inventory:
+    host_vars:
+      ca-certificates-fedora-latest:
+        ansible_python_interpreter: /usr/bin/python3
+      ca-certificates-fedora-rawhide:
+        ansible_python_interpreter: /usr/bin/python3
+  config_options:
+    defaults:
+      stdout_callback: yaml
+      bin_ansible_callbacks: true
+scenario:
+  name: default
