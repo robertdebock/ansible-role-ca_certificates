@@ -6,8 +6,8 @@ ca_certificates
 
 Install common CA certificates on your system.
 
-<img src="https://img.shields.io/ansible/role/d/"/>
-<img src="https://img.shields.io/ansible/quality/"/>
+<img src="https://img.shields.io/ansible/role/d/43947"/>
+<img src="https://img.shields.io/ansible/quality/43947"/>
 
 Example Playbook
 ----------------
