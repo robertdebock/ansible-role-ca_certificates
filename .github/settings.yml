@@ -1,4 +1,7 @@
 ---
+#
+# Ansible managed
+#
 repository:
   description: Install common CA certificates on your system.
   homepage: https://robertdebock.nl/
