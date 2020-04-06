@@ -5,4 +5,4 @@
   gather_facts: yes
 
   roles:
-    - ansible-role-ca_certificates
+    - role: ansible-role-ca_certificates
