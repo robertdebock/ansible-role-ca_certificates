@@ -2,9 +2,9 @@
 
 Install common CA certificates on your system.
 
-|Travis|GitHub|Quality|Downloads|
-|------|------|-------|---------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-ca_certificates.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-ca_certificates)|[![github](https://github.com/robertdebock/ansible-role-ca_certificates/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-ca_certificates/actions)|[![quality](https://img.shields.io/ansible/quality/43947)](https://galaxy.ansible.com/robertdebock/ca_certificates)|[![downloads](https://img.shields.io/ansible/role/d/43947)](https://galaxy.ansible.com/robertdebock/ca_certificates)|
+|Travis|GitHub|Quality|Downloads|Version|
+|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-ca_certificates.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-ca_certificates)|[![github](https://github.com/robertdebock/ansible-role-ca_certificates/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-ca_certificates/actions)|[![quality](https://img.shields.io/ansible/quality/43947)](https://galaxy.ansible.com/robertdebock/ca_certificates)|[![downloads](https://img.shields.io/ansible/role/d/43947)](https://galaxy.ansible.com/robertdebock/ca_certificates)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-ca_certificates.svg)](https://github.com/robertdebock/ansible-role-ca_certificates/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
