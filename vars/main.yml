@@ -1,5 +1,6 @@
 ---
 # vars file for ca_certificates
+
 _ca_certificates_packages:
   default:
     - ca-certificates
