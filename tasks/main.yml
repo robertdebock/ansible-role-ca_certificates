@@ -4,6 +4,3 @@
   package:
     name: "{{ ca_certificates_packages }}"
     state: present
-  register: ca_certificates_install_ca_certificates
-  until: ca_certificates_install_ca_certificates is succeeded
-  retries: 3
