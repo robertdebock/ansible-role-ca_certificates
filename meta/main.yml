@@ -37,7 +37,8 @@ galaxy_info:
 
   galaxy_tags:
     - cacertificates
-    - centos
-    - redhat
+    - ca
+    - ssl
+    - certificates
 
 dependencies: []
