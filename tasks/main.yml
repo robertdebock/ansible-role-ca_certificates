@@ -1,5 +1,6 @@
 ---
 # tasks file for ca_certificates
+
 - name: install ca_certificates
   package:
     name: "{{ ca_certificates_packages }}"
